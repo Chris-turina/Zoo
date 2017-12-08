@@ -22,19 +22,27 @@ export class AppComponent {
   ];
 
   newAnimalForm = null;
+  selectedAnimal= null;
 
   addNewAnimalForm(){
-    console.log(this.newAnimalForm)
     this.newAnimalForm = !null;
-    console.log(this.newAnimalForm)
   }
 
-  nullAnimalForm(){
-    this.newAnimalForm = null;
+  editAnimal(animalToEdit){
+    this.selectedAnimal = animalToEdit;
   }
 
   addAnimal(newAnimalFromChild: Animal){
     this.masterAnimalList.push(newAnimalFromChild);
-
   }
+  nullAnimalForm(){
+    this.newAnimalForm = null;
+  }
+
+  nullEditAnimal(){
+    this.selectedAnimal = null;
+  }
+
+
+
 }

@@ -1,0 +1,26 @@
+<h1>Edit Animal</h1>
+<div class="edit-animal" *ngIf='childSelectedAnimal'>
+  <div id="edit-animal">
+    <label>{{childSelectedAnimal.species}}</label>
+    <input [(ngModel)]="childSelectedAnimal.species">
+    <label>{{childSelectedAnimal.name}}</label>
+    <input [(ngModel)]="childSelectedAnimal.name">
+    <label>{{childSelectedAnimal.age}}</label>
+    <input [(ngModel)]="childSelectedAnimal.age">
+    <label>{{childSelectedAnimal.diet}}</label>
+    <input [(ngModel)]="childSelectedAnimal.diet">
+    <label>{{childSelectedAnimal.zooLocation}}</label>
+    <input [(ngModel)]="childSelectedAnimal.zooLocation">
+    <label>{{childSelectedAnimal.caretakers}}</label>
+    <input [(ngModel)]="childSelectedAnimal.caretakers">
+    <label>{{childSelectedAnimal.sex}}</label>
+    <input [(ngModel)]="childSelectedAnimal.sex">
+    <label>{{childSelectedAnimal.like}}</label>
+    <input [(ngModel)]="childSelectedAnimal.like">
+    <label>{{childSelectedAnimal.dislike}}</label>
+    <input [(ngModel)]="childSelectedAnimal.dislike">
+    <p (click)="keepChanges()">Keep Changes</p>
+  </div>
+
+
+</div>

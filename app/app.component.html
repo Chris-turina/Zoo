@@ -2,7 +2,7 @@
 <div class="container">
   <h1>Zoo</h1>
   <p id="add-animal" (click)="addNewAnimalForm()">Add Animal</p>
-  <animal-list [childAnimalList]="masterAnimalList"></animal-list>
+  <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
   <new-animal [childNewAnimal]="newAnimalForm" (newAnimalSender)="addAnimal($event)" (closeFormSender)="nullAnimalForm()"></new-animal>
-
+  <edit-animal [childSelectedAnimal]="selectedAnimal" (keepChangesSender)="nullEditAnimal()"></edit-animal>
 </div>
