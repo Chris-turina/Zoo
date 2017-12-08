@@ -1,5 +1,18 @@
 <h1>Hello Animal List</h1>
-<div class="animal" *ngFor="let currentAnimal of childAnimalList">
+
+<select (change)="onChange($event.target.value)">
+  <option value="allAnimals" selected="selected">All Animals</option>
+  <option value="lowToHigh">Age Low to High</option>
+  <option value="highToLow">Age High to Low</option>
+  <option value="caretakersHighToLow">Caretakers High to Low</option>
+  <option value="caretakersLowToHigh">Caretakers Low to High</option>
+  <option value="youngerThanTwo">Younger Than 2 years old</option>
+  <option value="twoAndOlder">Older then 1 year </option>
+
+</select>
+
+
+<div class="animal" *ngFor="let currentAnimal of childAnimalList | filter:filterByOption" >
   <h3>{{currentAnimal.species}}</h3>
   <p>{{currentAnimal.name}}</p>
   <p>{{currentAnimal.age}}</p>
