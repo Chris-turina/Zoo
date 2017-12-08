@@ -1,0 +1,57 @@
+.bio-title {
+  font-size: 60px; }
+
+.bio-tag {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; }
+  .bio-tag .label {
+    margin-right: 10px;
+    font-size: 20px;
+    text-decoration: underline; }
+  .bio-tag p {
+    font-size: 40px; }
+
+.animal-bio {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+#animal-bio {
+  position: relative;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 700px;
+  width: 700px;
+  border-radius: 5px; }
+  #animal-bio .title {
+    font-size: 40px; }
+  #animal-bio label {
+    font-size: 18px;
+    margin-bottom: 5px; }
+  #animal-bio input {
+    width: 300px;
+    margin-bottom: 20px;
+    height: 20px;
+    background-color: rgba(85, 85, 85, 0.8);
+    color: white;
+    border-radius: 5px;
+    font-size: 14px; }
+  #animal-bio .keep-button {
+    margin-top: 10px;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 5px;
+    transition: transform .5s; }
+    #animal-bio .keep-button:hover {
+      cursor: pointer;
+      transform: scale(1.1); }
+
+/*# sourceMappingURL=animal-bio.css.map */

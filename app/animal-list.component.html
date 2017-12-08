@@ -19,7 +19,7 @@
   <p (click)="editButtonClicked(currentAnimal)">Edit Animal</p>
 </div> -->
 <div id="animal">
-  <div class="animal" *ngFor="let currentAnimal of childAnimalList | filter:filterByOption" >
+  <div class="animal" *ngFor="let currentAnimal of childAnimalList | filter:filterByOption" (click)="animalCardClicked(currentAnimal)" >
     <h3>{{currentAnimal.species}}</h3>
     <div class="name_age">
       <p class="name">"{{currentAnimal.name}}"</p>

@@ -8,11 +8,15 @@
   justify-content: space-between;
   padding: 10px;
   border: 1px solid black;
-  margin: 10px;
+  margin: 30px;
   height: 300px;
   width: 300px;
   align-items: center;
   position: relative; }
+  .animal:hover {
+    cursor: pointer; }
+    .animal:hover .edit-button {
+      transform: translateY(-40px); }
   .animal h3 {
     font-size: 40px;
     text-align: center;
@@ -35,7 +39,8 @@
     align-items: center;
     height: 40px;
     width: 40px;
-    border: 1px solid black; }
+    border: 1px solid black;
+    transition: transform .5s ease; }
     .animal .edit-button:hover {
       cursor: pointer; }
 

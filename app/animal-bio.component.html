@@ -1,0 +1,49 @@
+<h1>Animal Bio</h1>
+
+<div class="animal-bio" *ngIf="childSelectedAnimalBio">
+  <div id="animal-bio">
+    <h3 class="bio-title">{{childSelectedAnimalBio.species}}</h3>
+
+    <div class="bio-tag">
+      <p class="label">Name: </p>
+      <p> {{childSelectedAnimalBio.name}}</p>
+    </div>
+
+    <div class="bio-tag">
+      <p class="label">Age: </p>
+      <p> {{childSelectedAnimalBio.age}}</p>
+    </div>
+    <div class="bio-tag">
+      <p class="label">Diet: </p>
+      <p> {{childSelectedAnimalBio.diet}}</p>
+    </div>
+    <div class="bio-tag">
+      <p class="label">Zoo Location: </p>
+      <p> {{childSelectedAnimalBio.zooLocation}}</p>
+    </div>
+    <div class="bio-tag">
+      <p class="label">Number of Caretakers: </p>
+      <p> {{childSelectedAnimalBio.caretakers}}</p>
+    </div>
+    <div class="bio-tag">
+      <p class="label">Sex: </p>
+      <p> {{childSelectedAnimalBio.sex}}</p>
+    </div>
+    <div class="bio-tag">
+      <p class="label">What {{childSelectedAnimalBio.name}} Likes: </p>
+      <p> {{childSelectedAnimalBio.like}}</p>
+    </div>
+    <div class="bio-tag">
+      <p class="label">What {{childSelectedAnimalBio.name}} Dislikes: </p>
+      <p> {{childSelectedAnimalBio.dislike}}</p>
+    </div>
+    <div class="close" (click)="closeBio()">
+      <div class="one-two">
+        <div class="bar-one">
+        </div>
+        <div class="bar-two">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

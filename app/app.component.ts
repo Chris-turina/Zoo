@@ -27,6 +27,7 @@ export class AppComponent {
 
   newAnimalForm = null;
   selectedAnimal= null;
+  animalBio = null;
 
   addNewAnimalForm(){
     this.newAnimalForm = !null;
@@ -45,6 +46,14 @@ export class AppComponent {
 
   nullEditAnimal(){
     this.selectedAnimal = null;
+  }
+
+  showAnimalBio(animalBio){
+    this.animalBio = animalBio;
+  }
+
+  nullAnimalBio(){
+    this.animalBio =null;
   }
 
 

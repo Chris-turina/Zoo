@@ -7,8 +7,8 @@ import { Animal } from './animal.model';
 })
 
 export class EditAnimalFormComponent {
-@Input() childSelectedAnimal: Animal;
-@Output() keepChangesSender = new EventEmitter();
+  @Input() childSelectedAnimal: Animal;
+  @Output() keepChangesSender = new EventEmitter();
 
   keepChanges(){
     this.keepChangesSender.emit();

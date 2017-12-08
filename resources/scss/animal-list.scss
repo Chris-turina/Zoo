@@ -1,8 +1,12 @@
 #animal {
   display: flex;
   flex-wrap: wrap;
-  
 
+
+}
+
+.animal-edit {
+  
 }
 
 .animal {
@@ -11,11 +15,17 @@
   justify-content: space-between;
   padding: 10px;
   border: 1px solid black;
-  margin: 10px;
+  margin: 30px;
   height: 300px;
   width: 300px;
   align-items: center;
   position: relative;
+  &:hover {
+    cursor: pointer;
+    .edit-button {
+      transform: translateY(-40px);
+    }
+  }
 
 
   h3 {
@@ -50,6 +60,7 @@
     height: 40px;
     width: 40px;
     border: 1px solid black;
+    transition: transform .5s ease;
 
     &:hover {
       cursor: pointer;
