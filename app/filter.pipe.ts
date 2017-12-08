@@ -17,13 +17,7 @@ export class FilterPipe implements PipeTransform {
    } else if(desiredSort === "lowToHigh") {
      input.sort(function(a: Animal, b: Animal){return a.age-b.age})
      return output;
-   } else if(desiredSort === "caretakersHighToLow") {
-     input.sort(function(a: Animal, b: Animal){return b.caretakers-a.caretakers})
-     return output;
-   } else if(desiredSort === "caretakersLowToHigh") {
-     input.sort(function(a: Animal, b: Animal){return a.caretakers-b.caretakers})
-     return output;
-   if (desiredSort === "allAnimals"){
+   } else if (desiredSort === "allAnimals"){
       return output;
 
     } else if(desiredSort ==="youngerThanTwo") {

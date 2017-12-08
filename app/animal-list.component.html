@@ -1,18 +1,12 @@
-<h1>Hello Animal List</h1>
-
 <select (change)="onChange($event.target.value)">
   <option value="allAnimals" selected="selected">All Animals</option>
   <option value="lowToHigh">Age Low to High</option>
   <option value="highToLow">Age High to Low</option>
-  <option value="caretakersHighToLow">Caretakers High to Low</option>
-  <option value="caretakersLowToHigh">Caretakers Low to High</option>
   <option value="youngerThanTwo">Younger Than 2 years old</option>
   <option value="twoAndOlder">Older then 1 year </option>
-
 </select>
 
-
-<div class="animal" *ngFor="let currentAnimal of childAnimalList | filter:filterByOption" >
+<!-- <div class="animal" *ngFor="let currentAnimal of childAnimalList | filter:filterByOption" >
   <h3>{{currentAnimal.species}}</h3>
   <p>{{currentAnimal.name}}</p>
   <p>{{currentAnimal.age}}</p>
@@ -23,4 +17,17 @@
   <p>{{currentAnimal.like}}</p>
   <p>{{currentAnimal.dislike}}</p>
   <p (click)="editButtonClicked(currentAnimal)">Edit Animal</p>
+</div> -->
+<div id="animal">
+  <div class="animal" *ngFor="let currentAnimal of childAnimalList | filter:filterByOption" >
+    <h3>{{currentAnimal.species}}</h3>
+    <div class="name_age">
+      <p class="name">"{{currentAnimal.name}}"</p>
+      <p class="age">Age: {{currentAnimal.age}}</p>
+      <div class="edit-button">
+        <p (click)="editButtonClicked(currentAnimal)">Edit</p>
+      </div>
+    </div>
+  </div>
+
 </div>

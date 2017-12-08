@@ -1,0 +1,57 @@
+#animal {
+  display: flex;
+
+}
+
+.animal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 10px;
+  height: 300px;
+  width: 300px;
+  align-items: center;
+  position: relative;
+
+
+  h3 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .age {
+    font-size: 15px;
+  }
+
+  .name_age {
+    text-align: center;
+    height: 150px;
+    p {
+      margin-bottom: 15px;
+    }
+  }
+
+  .edit-button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+
+    &:hover {
+      cursor: pointer;
+
+    }
+  }
+}
