@@ -6,7 +6,7 @@
 }
 
 .animal-edit {
-  
+
 }
 
 .animal {
@@ -22,6 +22,7 @@
   position: relative;
   &:hover {
     cursor: pointer;
+    border: 3px solid red;
     .edit-button {
       transform: translateY(-40px);
     }

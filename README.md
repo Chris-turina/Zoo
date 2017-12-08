@@ -1,37 +1,39 @@
-# _{Application Name}_
+# _The Zoo_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Keeps Track of Animals at the Zoo, 12/08/2017_
 
-#### By _**{List of contributors}**_
+#### By _**Chris Turina**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This application is an Animal tracker application that will keep track of information the user puts into it about animals at the Zoo.  It shows the user the animals in a list and lets the user sort the list.  The user is able to edit the information if there is a mistake and the user is also able to create a new animal bio if a new animal enters the zoo._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+* _Clone this Repo:_
+* _https://github.com/Chris-turina/Zoo_
+* _Type npm install in the Terminal_
+* _Type bower install in the Terminal_
+* _Type gulp build in the Terminal_
+* _Type gulp serve in the Terminal_
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_Currently When you click on the edit button it shows the bio and the edit screen._
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_Email: chris.turina@gmail.com with any questions, comments, or concerns._
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+* _HTML_
+* _CSS_
+* _Scss_
+* _JavaScript_
+* _AngularJS_
+* _Node_
+* _Gulp_
 
-### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
-
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2017 **_Chris Turina_**

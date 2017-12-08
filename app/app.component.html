@@ -1,6 +1,5 @@
-<h1>This Should Show Up</h1>
 <div class="container">
-  <h1>Zoo</h1>
+  <h1>The Zoo</h1>
   <p id="add-animal" (click)="addNewAnimalForm()">Add Animal</p>
   <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)" (showBioClicker)="showAnimalBio($event)" ></animal-list>
   <new-animal [childNewAnimal]="newAnimalForm" (newAnimalSender)="addAnimal($event)" (closeFormSender)="nullAnimalForm()"></new-animal>

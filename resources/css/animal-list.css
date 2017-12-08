@@ -14,7 +14,8 @@
   align-items: center;
   position: relative; }
   .animal:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    border: 3px solid red; }
     .animal:hover .edit-button {
       transform: translateY(-40px); }
   .animal h3 {
