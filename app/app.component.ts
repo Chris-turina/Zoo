@@ -12,12 +12,29 @@ export class AppComponent {
   public age: number;
   public diet: string;
   public zooLocation: string;
-  public cartakers: number;
+  public caretakers: number;
   public sex: string;
   public like: string;
   public dislike: string;
 
   public masterAnimalList: Animal[] = [
     new Animal('Artic Fox', 'Moon', 2, 'Carnivore', 'Norther Trail', 5, 'Female', 'Cool Shade', 'Loud Noises')
-  ]
+  ];
+
+  newAnimalForm = null;
+
+  addNewAnimalForm(){
+    console.log(this.newAnimalForm)
+    this.newAnimalForm = !null;
+    console.log(this.newAnimalForm)
+  }
+
+  nullAnimalForm(){
+    this.newAnimalForm = null;
+  }
+
+  addAnimal(newAnimalFromChild: Animal){
+    this.masterAnimalList.push(newAnimalFromChild);
+
+  }
 }

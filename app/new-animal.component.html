@@ -1,0 +1,20 @@
+<h2>New Animal List</h2>
+<div class="new-animal" *ngIf="childNewAnimal">
+<!-- <div class="new-animal"> -->
+  <div id="new-animal">
+    <label>Enter New Animal:</label>
+    <form>
+      <input type="text" #newSpecies placeholder="Species">
+      <input type="text" #newName placeholder="Name">
+      <input type="number" #newAge placeholder="Age">
+      <input type="text" #newDiet placeholder="Diet">
+      <input type="text" #newZooLocation placeholder="ZooLocation">
+      <input type="number" #newCaretakers placeholder="Caretakers">
+      <input type="text" #newSex placeholder="Sex">
+      <input type="text" #newLike placeholder="Species">
+      <input type="text" #newDislike placeholder="Species">
+      <p (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newZooLocation.value, newCaretakers.value, newSex.value, newLike.value, newDislike.value)" (click)="closeForm()">Submit</p>
+    </form>
+
+  </div>
+</div>
