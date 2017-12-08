@@ -1,7 +1,7 @@
 <h1>Edit Animal</h1>
 <div class="edit-animal" *ngIf='childSelectedAnimal'>
   <div id="edit-animal">
-    <label>{{childSelectedAnimal.species}}</label>
+    <label class="title">{{childSelectedAnimal.species}}</label>
     <input [(ngModel)]="childSelectedAnimal.species">
     <label>{{childSelectedAnimal.name}}</label>
     <input [(ngModel)]="childSelectedAnimal.name">
@@ -19,7 +19,15 @@
     <input [(ngModel)]="childSelectedAnimal.like">
     <label>{{childSelectedAnimal.dislike}}</label>
     <input [(ngModel)]="childSelectedAnimal.dislike">
-    <p (click)="keepChanges()">Keep Changes</p>
+    <p class="keep-button" (click)="keepChanges()">Keep Changes</p>
+    <div class="close" (click)="keepChanges()">
+      <div class="one-two">
+        <div class="bar-one">
+        </div>
+        <div class="bar-two">
+        </div>
+      </div>
+    </div>
   </div>
 
 

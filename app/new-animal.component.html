@@ -1,9 +1,9 @@
 <h2>New Animal List</h2>
 <div class="new-animal" *ngIf="childNewAnimal">
 <!-- <div class="new-animal"> -->
-  <div id="new-animal">
+  <div >
     <label>Enter New Animal:</label>
-    <form>
+    <form id="new-animal">
       <input type="text" #newSpecies placeholder="Species">
       <input type="text" #newName placeholder="Name">
       <input type="number" #newAge placeholder="Age">
@@ -14,6 +14,14 @@
       <input type="text" #newLike placeholder="Species">
       <input type="text" #newDislike placeholder="Species">
       <p (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newZooLocation.value, newCaretakers.value, newSex.value, newLike.value, newDislike.value)" (click)="closeForm()">Submit</p>
+      <div class="close" (click)="closeForm()">
+        <div class="one-two">
+          <div class="bar-one">
+          </div>
+          <div class="bar-two">
+          </div>
+        </div>
+      </div>
     </form>
 
   </div>

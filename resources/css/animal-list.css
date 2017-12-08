@@ -1,5 +1,6 @@
 #animal {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .animal {
   display: flex;

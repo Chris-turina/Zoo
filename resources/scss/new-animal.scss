@@ -1,4 +1,4 @@
-.edit-animal {
+.new-animal {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,10 +11,10 @@
   align-items: center;
 }
 
-#edit-animal{
+#new-animal{
   position: relative;
   color: white;
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, .9);
   height: 700px;
   width: 700px;
   display: flex;
@@ -27,22 +27,15 @@
     font-size: 40px;
   }
 
-  label {
-    font-size: 18px;
-    margin-bottom: 5px;
-
-
-  }
-
   input {
     width: 300px;
     margin-bottom: 20px;
-    height: 20px;
-    background-color: rgba(85, 85, 85, .8);
+    height: 40px;
+    background-color: rgba(85, 85, 85, .5);
     color: white;
     border-radius: 5px;
-    // text-align: center;
-    font-size: 14px;
+    text-align: center;
+    font-size: 20px;
   }
 
   .keep-button {
